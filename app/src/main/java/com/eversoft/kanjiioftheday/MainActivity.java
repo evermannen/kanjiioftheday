@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void displayWelcomeMessage() {
         final TextView welcomeTextView = findViewById(R.id.welcomeTextView);
-        final ImageView kanjiView = findViewById(R.id.kanjiImageView);
+        ImageView kanjiView = findViewById(R.id.kanjiImageView);
         welcomeTextView.setVisibility(View.VISIBLE);
-        loadKanjiImageFromDrawable(this, "kanji_20230411", kanjiView);
+        loadKanjiImageFromDrawable(this, "kanji", kanjiView);
 
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 // Get the Kanji information for today and update the TextViews
                 KanjiInfo kanjiInfo = getKanjiInfoForToday(MainActivity.this);
                 updateKanjiInfo(kanjiInfo);
+                loadKanjiImageFromDrawable(MainActivity.this, "kanji_dog", kanjiView);
+                kanjiView.invalidate();
 
             }
         }, 5000);
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     public String generateKanjiFilename() {
         LocalDate currentDate = LocalDate.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMdd");
         String formattedDate = currentDate.format(formatter);
         String kanjiFilename = formattedDate + "_kanji";
         return kanjiFilename;
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (imageResourceId != 0) {
             imageView.setImageResource(imageResourceId);
+            imageView.invalidate();
         } else {
             // Handle the case where the resource is not found, e.g., load a placeholder or show an error message.
         }
@@ -89,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
                 if (todayDate.equals(date)) {
                     String title = jsonObject.getString("title");
                     String description = jsonObject.getString("description");
-                    return new KanjiInfo(date, title, description);
+                    String filename = jsonObject.getString("file");
+                    return new KanjiInfo(date, title, description, filename);
                 }
             }
         } catch (IOException | JSONException e) {
