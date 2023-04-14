@@ -7,39 +7,14 @@
   },
   {
     "date": "0414",
-    "file": "kanji_one.png",
+    "file": "kanji_one",
     "title": "One",
     "description": "The Kanji for \"one\" is 一 (pronounced \"ichi\" in Japanese). This character is a simple horizontal line, symbolizing the concept of a single unit. It is the most basic numerical Kanji and is used to represent the quantity of one in various contexts, such as counting, dates, and mathematics. The simplicity of the Kanji 一 makes it easy to recognize and remember, serving as a fundamental building block for learning more complex Kanji characters."
   },
   {
     "date": "0415",
-    "file": "kanji_two.png",
+    "file": "kanji_two",
     "title": "Two",
     "description": "The Kanji for \"two\" is 二 (pronounced \"ni\" in Japanese). This character consists of two horizontal lines, symbolizing the concept of a pair or a duo. It represents the quantity of two in various contexts, such as counting, dates, and mathematics. The Kanji 二 is simple and straightforward, with its two parallel lines making it easy to recognize and remember. As a basic numerical Kanji, it serves as an essential foundation for learning more complex Kanji characters."
-  },
-  {
-    "date": "0416",
-    "title": "火",
-    "description": "This Kanji represents 'fire'."
-  },
-  {
-    "date": "0417",
-    "title": "Dog",
-    "description": "The Kanji for \"dog\" is 犬 (pronounced \"inu\" in Japanese). This character is composed of two parts: the top part resembles a horizontal line with two vertical lines extending downward, representing a dog's head, while the bottom part resembles a dog's body with four legs. This Kanji symbolizes a dog, which is a common domesticated animal known for its loyalty, companionship, and guarding abilities. In Japanese culture, dogs are often associated with loyalty and protection, and the Kanji 犬 reflects these attributes."
-  },
-  {
-    "date": "20230411",
-    "title": "火",
-    "description": "This Kanji represents 'fire'."
-  },
-  {
-    "date": "20230411",
-    "title": "Dog",
-    "description": "The Kanji for \"dog\" is 犬 (pronounced \"inu\" in Japanese). This character is composed of two parts: the top part resembles a horizontal line with two vertical lines extending downward, representing a dog's head, while the bottom part resembles a dog's body with four legs. This Kanji symbolizes a dog, which is a common domesticated animal known for its loyalty, companionship, and guarding abilities. In Japanese culture, dogs are often associated with loyalty and protection, and the Kanji 犬 reflects these attributes."
-  },
-  {
-    "date": "20230407",
-    "title": "火",
-    "description": "This Kanji represents 'fire'."
   }
 ]

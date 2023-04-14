@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 // Get the Kanji information for today and update the TextViews
                 KanjiInfo kanjiInfo = getKanjiInfoForToday(MainActivity.this);
                 updateKanjiInfo(kanjiInfo);
-                loadKanjiImageFromDrawable(MainActivity.this, "kanji_dog", kanjiView);
+                loadKanjiImageFromDrawable(MainActivity.this, kanjiInfo.getFilename(), kanjiView);
                 kanjiView.invalidate();
 
             }
